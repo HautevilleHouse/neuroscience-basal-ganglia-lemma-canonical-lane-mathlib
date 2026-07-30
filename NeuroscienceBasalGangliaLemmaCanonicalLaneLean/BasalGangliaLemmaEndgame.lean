@@ -1,0 +1,19 @@
+import canonicalLaneMathlib.AdmissibleClass
+import NeuroscienceBasalGangliaLemmaCanonicalLaneLean.NeuralFieldTheoryDynamics
+import NeuroscienceBasalGangliaLemmaCanonicalLaneLean.HodgkinHuxleyDynamics
+import NeuroscienceBasalGangliaLemmaCanonicalLaneLean.BasalGangliaCircuit
+import NeuroscienceBasalGangliaLemmaCanonicalLaneLean.HebbianSynapticPlasticity
+import NeuroscienceBasalGangliaLemmaCanonicalLaneLean.ConnectomeTopology
+
+namespace HautevilleHouse
+namespace NeuroscienceBasalGangliaLemmaCanonicalLaneLean
+
+def ConstrainedBasalGangliaClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_basal_ganglia_endgame (A : AdmissibleClass) :
+    ConstrainedBasalGangliaClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end NeuroscienceBasalGangliaLemmaCanonicalLaneLean
+end HautevilleHouse
